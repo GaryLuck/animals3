@@ -1,19 +1,19 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -g
+CC = cl
+CFLAGS = /W4 /D_CRT_SECURE_NO_WARNINGS /nologo /Zi
 
-TARGET = animals_c
+TARGET = animals_c.exe
 SRCS = main.c game.c storage.c
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.c=.obj)
 
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+	$(CC) $(CFLAGS) /Fe$(TARGET) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+.c.obj:
+	$(CC) $(CFLAGS) /c $<
 
 clean:
-	rm -f $(TARGET) $(OBJS)
+	-del $(TARGET) $(OBJS) *.pdb *.ilk
 
 .PHONY: all clean

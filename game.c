@@ -1,4 +1,7 @@
-#define _POSIX_C_SOURCE 200809L
+#ifdef _MSC_VER
+#define strdup _strdup
+#endif
+
 #include "game.h"
 #include <ctype.h>
 #include <stdio.h>
