@@ -1,0 +1,10 @@
+# Binaries
+animals_c
+*.o
+*.out
+
+# Data
+database.dat
+
+# System
+.DS_Store
