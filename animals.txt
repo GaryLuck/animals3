@@ -13,3 +13,5 @@ then the program should ask what the user was thinking of, and what differentiat
 the user's animal from a human, and adds that to the database. The game is run
 over and over. when the user indicates they are done, the database should be
 be written to a file for subseqent executions of the game.
+
+Just a test
