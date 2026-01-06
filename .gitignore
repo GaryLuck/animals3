@@ -4,7 +4,7 @@ animals_c
 *.out
 
 # Data
-database.dat
+# database.dat
 
 # System
 .DS_Store
