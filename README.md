@@ -13,3 +13,5 @@ make
 ## How to Play
 Think of an animal. Answer the computer's questions.
 If the computer guesses wrong, teach it about your animal!
+
+I'm playing with the zed editor
